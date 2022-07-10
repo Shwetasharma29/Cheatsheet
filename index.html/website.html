@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+      <link rel="stylesheet"  href="/*normalize.css*/">
+</head>
+<style>
+ body{
+    font-family: 'Montserrat', sans-serif;
+  
+ }
+.image-responsive{
+      max-width: 100%;
+}
+
+.hero_image{
+      background: url(1.jpg) no-repeat;
+      height: 100vh;
+      -webkit-background-size:cover;
+      background-size: cover;
+      position: relative;
+}
+.hero_wrapper{
+      position: absolute;
+      color: white;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+}
+.hero_wrapper h1{
+      font-size: 2.4rem;
+      text-align: center;
+}
+.hero_wrapper span{
+      margin-left: 5rem;
+      display: inline-block;
+      margin-bottom: .5rem;
+}
+
+.form_code{
+      text-align: center;
+}
+.form_code .post_code{
+      display: block;
+      width: 80%;
+      margin-right:auto; 
+      margin-left:auto;
+      border-radius: 2rem;
+      padding: .6rem;
+      border:none;
+      outline: none;
+}
+.form_code button{
+      width: 40%;
+      text-align: center;
+      background-color: #00bab1;
+      color: white;
+      padding: .6rem;
+      margin-top: .3rem;
+      margin: 1rem auto 0rem;
+      border:none;
+      border-radius: .3rem;
+}
+.product{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: .3rem;
+
+}
+.product_list_item{
+      float: left;
+      width: 32%;
+      margin-left: .5rem;
+}
+.product_list_item:first-of-type {
+ margin-left: 0%;
+}
+
+@media screen and (max-width: 700px){
+      .product_list_item{
+            width: 100%;
+            float: none;
+      }
+}
+</style>
+<body>
+	<section class="hero_image">
+		<div class="hero_wrapper">
+            <h1>The Food You Love</h1>
+            <p>lorem ipsum dolor sit amet,consectetur adipisicing elit. atque molestia similique cumque inventore teneture! Illum cupiditate eos quam place at consectetur.</p>
+            <span>post</span>
+            <form class="form_code">
+            	<input class="post_code" type="text" placeholder="enter your post code" >
+            	<button type="submit">Find Food</button>
+            	
+            </form>			
+		</div>
+	</section>
+      <section class="product">
+            <div class="product_list_item">
+                  <img class="image-responsive" src="2.jpg">
+                  <h2 class="product_heading">
+                    Food 1
+                        
+                  </h2>
+                  <p>lorem ipsum dolor sit amet,consectetur adipisicing elit. atque molestia similique cumque inventore teneture! Illum cupiditate eos quam place at consectetur.</p>
+            </div>
+             <div class="product_list_item">
+                  <img class="image-responsive" src="3.jpg">
+                  <h2 class="product_heading">
+                    Food 2
+                        
+                  </h2>
+                  <p>lorem ipsum dolor sit amet,consectetur adipisicing elit. atque molestia similique cumque inventore teneture! Illum cupiditate eos quam place at consectetur.</p>
+            </div>
+            <div class="product_list_item">
+                  <img class="image-responsive" src="4.jpg">
+                  <h2 class="product_heading">
+                    Food 3
+                        
+                  </h2>
+                  <p>lorem ipsum dolor sit amet,consectetur adipisicing elit. atque molestia similique cumque inventore teneture! Illum cupiditate eos quam place at consectetur.</p>
+            </div>
+      </section>
+
+</body>
+</html>
